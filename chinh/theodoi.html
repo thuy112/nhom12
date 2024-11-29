@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wed đọc truyện</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="đn.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="1.html">TruyenDoc</a>
+            </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500" aria-current="page"
+                        href="1.html">
+                        <span class="icon-footer-address">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="theodoi.html">Theo dõi</a> 
+                </div> 
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="ls.html">Lịch sử</a> 
+                </div> 
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500 dropbtn" href="#">
+                        Thể loại <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#" data-description="Các câu chuyện đầy hành động, kịch tính.">Action</a>
+                        <a href="#" data-description="Phiêu lưu, khám phá những vùng đất mới.">Adventure</a>
+                        <a href="#" data-description="Truyện mang phong cách Anime.">Anime</a>
+                        <a href="#" data-description="Truyện tình cảm ngọt ngào, lãng mạn.">Ngôn Tình</a>
+                        <a href="#" data-description="Thể loại về huyền bí và siêu nhiên.">Manhua</a>
+                    </div>
+                </div>
+                <!-- Khu vực hiển thị mô tả -->
+                <div id="genre-description" style="margin-top: 10px; color: rgb(3, 3, 3); font-style: italic; display: none;">
+                </div>                                              
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="đn.html">Đăng nhập</a> 
+                </div>   
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="1.html">Trang chủ</a> » <span>Theo dõi</span>
+            </div>
+        <section class="hero-banner">
+            <h2 style="color: blue;">Truyện đang theo dõi > </h2>
+            <hr>
+            <p>Bạn chưa theo dõi truyện nào cả. Để theo dõi truyện, nhấn vào <u>Theo dõi</u> như hình bên dưới:</p>
+            <p>Bạn nên <a style="color: blue;" href="đn.html">Đăng nhập</a> 
+            để truy cập truyện đã theo dõi của bạn ở bất cứ đâu</p>          
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 TruyenDoc. Liên hệ quảng cáo qua Telegram: @thktv</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

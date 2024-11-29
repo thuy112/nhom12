@@ -1,0 +1,211 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #121010;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6dcff9;
+    color: #050404;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Nội dung chính */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.breadcrumb {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.breadcrumb span {
+    color: #555;
+}
+
+/* Thông tin truyện */
+.comic-details {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comic-details img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.details h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Nút bấm */
+.btn-follow, .btn-read, .btn-read-latest {
+    padding: 10px 15px;
+    margin: 10px 5px 0 0;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    transition: background-color 0.3s ease; /* Hiệu ứng mượt */
+}
+
+/* Màu nền mặc định cho các nút */
+.btn-follow {
+    background-color: #ff5733; /* Màu cam đậm */
+}
+
+.btn-read {
+    background-color: #007bff; /* Màu xanh dương */
+}
+
+.btn-read-latest {
+    background-color: #28a745; /* Màu xanh lá */
+}
+
+/* Hiệu ứng khi di chuột qua */
+.btn-follow:hover {
+    background-color: #e03e1a; /* Màu cam đậm hơn */
+}
+
+.btn-read:hover {
+    background-color: #0056b3; /* Màu xanh dương đậm hơn */
+}
+
+.btn-read-latest:hover {
+    background-color: #1e7e34; /* Màu xanh lá đậm hơn */
+}
+
+footer {
+    background: #6dcff9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+/* Liên kết mặc định */
+.breadcrumb-link, .genre-link {
+    color: blue; /* Màu mặc định */
+    text-decoration: none; /* Xóa gạch chân */
+    font-weight: bold; /* Chữ đậm */
+    transition: color 0.3s ease; /* Hiệu ứng mượt */
+}
+
+/* Khi di chuột qua hoặc nhấp vào */
+.breadcrumb-link:hover, .genre-link:hover,
+.breadcrumb-link:active, .genre-link:active {
+    color: red; /* Màu đỏ khi nhấn hoặc di chuột */
+}
+
+/* Bảng danh sách chương */
+.chapter-list {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chapter-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.chapter-list table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.chapter-list th, .chapter-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.chapter-list th {
+    background-color: #6dcff9;
+    color: white;
+}
+
+.chapter-list td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.chapter-list td a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.chapter-list tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+ /* Phần giới thiệu manga */
+.manga-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manga-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.manga-intro p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.manga-intro p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.manga-intro p a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

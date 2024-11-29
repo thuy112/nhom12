@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wed đọc truyện</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="đn.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="1.html">TruyenDoc</a>
+            </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500" aria-current="page"
+                        href="1.html">
+                        <span class="icon-footer-address">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="theodoi.html">Theo dõi</a> 
+                </div> 
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="ls.html">Lịch sử</a> 
+                </div> 
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500 dropbtn" href="#">
+                        Thể loại <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#" data-description="Các câu chuyện đầy hành động, kịch tính.">Action</a>
+                        <a href="#" data-description="Phiêu lưu, khám phá những vùng đất mới.">Adventure</a>
+                        <a href="#" data-description="Truyện mang phong cách Anime.">Anime</a>
+                        <a href="#" data-description="Truyện tình cảm ngọt ngào, lãng mạn.">Ngôn Tình</a>
+                        <a href="#" data-description="Thể loại về huyền bí và siêu nhiên.">Manhua</a>
+                    </div>
+                </div>
+                <!-- Khu vực hiển thị mô tả -->
+                <div id="genre-description" style="margin-top: 10px; color: rgb(3, 3, 3); font-style: italic; display: none;">
+                </div>                                          
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="đn.html">Đăng nhập</a> 
+                </div>   
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="1.html">Trang chủ</a> » <span>Đăng nhập</span>
+        </div>
+        <div class="login-form">
+            <h2>ĐĂNG NHẬP</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" name="password" placeholder="Mật khẩu" required>
+                </div>
+                <div class="actions">
+                    <a href="qmk.html" class="forgot-password">Quên mật khẩu</a>
+                    <a href="dk.html" class="register">Đăng ký</a>
+                </div>
+                <button type="submit" class="login-btn">Đăng nhập</button>
+                <button type="button" class="google-login-btn">
+                    <span class="google-icon">G</span> Đăng nhập bằng Google
+                </button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TruyenDoc. Liên hệ quảng cáo qua Telegram: @thktv</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wed đọc truyện</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ls.css">
+    <link rel="stylesheet" href="đn.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="1.html">TruyenDoc</a>
+            </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500" aria-current="page"
+                        href="1.html">
+                        <span class="icon-footer-address">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="theodoi.html">Theo dõi</a> 
+                </div> 
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="ls.html">Lịch sử</a> 
+                </div> 
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500 dropbtn" href="#">
+                        Thể loại <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#" data-description="Các câu chuyện đầy hành động, kịch tính.">Action</a>
+                        <a href="#" data-description="Phiêu lưu, khám phá những vùng đất mới.">Adventure</a>
+                        <a href="#" data-description="Truyện mang phong cách Anime.">Anime</a>
+                        <a href="#" data-description="Truyện tình cảm ngọt ngào, lãng mạn.">Ngôn Tình</a>
+                        <a href="#" data-description="Thể loại về huyền bí và siêu nhiên.">Manhua</a>
+                    </div>
+                </div>
+                <!-- Khu vực hiển thị mô tả -->
+                <div id="genre-description" style="margin-top: 10px; color: rgb(3, 3, 3); font-style: italic; display: none;">
+                </div>                                              
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="đn.html">Đăng nhập</a> 
+                </div>   
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="1.html">Trang chủ</a> » <a href="#">Lịch sử</a>
+        </div>
+        <h2 style="color: blue;">Lịch sử đọc truyện ></h2>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active">Từ thiết bị</button>
+        </div>
+        <div id="device-tab" class="tab-content">
+            <h3>Truyện đang đọc:</h3>
+            <ul id="device-history"> </ul>
+        </div>
+
+        <!-- Nội dung tab: Theo tài khoản -->
+        <div id="account-tab" class="tab-content" style="display: none;">
+            <p>Chức năng này hiện chưa được hỗ trợ.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TruyenDoc. Liên hệ quảng cáo qua Telegram: @thktv</p>
+    </footer>
+    <script>
+        // Hàm thêm vào lịch sử
+        function addToHistory(title, chapter) {
+            const history = JSON.parse(localStorage.getItem('readingHistory')) || [];
+            const existingStoryIndex = history.findIndex(story => story.title === title);
+            if (existingStoryIndex !== -1) {
+                history[existingStoryIndex].chapter = chapter;
+            } else {
+                history.push({ title, chapter });
+            }
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        }
+
+        // Hàm tải lịch sử
+        function loadHistory() {
+            const history = JSON.parse(localStorage.getItem('readingHistory')) || [];
+            const historyList = document.getElementById('device-history');
+            if (history.length === 0) {
+                historyList.innerHTML = '<li>Bạn chưa đọc truyện nào.</li>';
+                return;
+            }
+            historyList.innerHTML = '';
+            history.forEach(story => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <strong>${story.title}</strong><br>
+                    Chương: <a href="chapter${story.chapter}.html">Chương ${story.chapter}</a>
+                `;
+                historyList.appendChild(listItem);
+            });
+        }
+
+        // Lưu truyện vào lịch sử
+        const storyTitle = "Tên Truyện A"; // Ví dụ
+        const currentChapter = "5"; // Ví dụ
+        addToHistory(storyTitle, currentChapter);
+
+        // Gọi hàm hiển thị lịch sử
+        document.addEventListener('DOMContentLoaded', loadHistory);
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

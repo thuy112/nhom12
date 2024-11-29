@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wed đọc truyện</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+        <div>
+            <a href="1.html">TruyenDoc</a>
+        </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500" aria-current="page"
+                        href="1.html">
+                        <span class="icon-footer-address">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="theodoi.html">Theo dõi</a> 
+                </div> 
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="ls.html">Lịch sử</a> 
+                </div> 
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500 dropbtn" href="#">
+                        Thể loại <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="action.html" data-description="Các câu chuyện đầy hành động, kịch tính.">Action</a>
+                        <a href="Adventure.html" data-description="Phiêu lưu, khám phá những vùng đất mới.">Adventure</a>
+                        <a href="Anime.html" data-description="Truyện mang phong cách Anime.">Anime</a>
+                        <a href="Ngôntinh.html" data-description="Truyện tình cảm ngọt ngào, lãng mạn.">Ngôn Tình</a>
+                        <a href="Manhua.html" data-description="Thể loại về huyền bí và siêu nhiên.">Manhua</a>
+                    </div>
+                </div>
+                <!-- Khu vực hiển thị mô tả -->
+                <div id="genre-description" style="margin-top: 10px; color: rgb(3, 3, 3); font-style: italic; display: none;">
+                </div>                                              
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="đn.html">Đăng nhập</a> 
+                </div>   
+            </div>
+        </nav>
+    </header>
+    <main>
+<!-- Truyện đề cử -->
+        <section class="hero-banner">
+                <h2 style="color: blue;">Truyện đề cử > </h2>
+            <hr>
+            <div class="flex items-center space-x-4 transition-transform duration-500" id="slider">
+                <!-- Truyện 1 -->
+                <div class="box-product">
+                    <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen1.html">
+                    <img class="w-100" src="img/truyen1.jpg"
+                        alt="truyen 1.png"></a>
+                    <div class="box-product-hover">
+                        <a class="hover:text-red-500" href="truyen1.html">HẠ CÁNH ĐẾN NĂM SAU</a>
+                        <br>
+                        <a class="hover:text-red-500" href="chapter15.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div> 
+            <!-- Truyện 2 -->
+            <div class="box-product">
+                <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen2.html">
+                    <img class="w-100" src="img/truyen2.jpg"
+                        alt="truyen 2.png"></a>
+                    <div class="box-product-hover">
+                        <a class="hover:text-red-500" href="truyen2.html">TINH GIÁP HỒN TƯỚNG</a>
+                        <br>
+                        <a class="hover:text-red-500" href="truyen2.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Truyện 3 -->
+            <div class="box-product">
+                <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen3.html">
+                    <img class="w-100" src="img/truyen3.jpg"
+                        alt="truyen 3.png"></a>
+                    <div class="box-product-hover">
+                        <a class="hover:text-red-500" href="truyen3.html">TỬ ĐẤU</a><br>
+                        <a class="hover:text-red-500" href="truyen3.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Truyện 4 -->
+            <div class="box-product">
+                <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen4.html">
+                    <img class="w-100" src="img/truyen4.jpg"
+                        alt="truyen 4.png"></a>
+                    <div class="box-product-hover">                      
+                        <a class="hover:text-red-500" href="truyen4.html">VÔ ĐỊCH ĐỐN NGỘ</a><br>
+                        <a class="hover:text-red-500" href="truyen4.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Truyện 5 -->
+            <div class="box-product">
+                <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen5.html">
+                    <img class="w-100" src="img/truyen5.jpg"
+                        alt="truyen 5.png"></a>
+                    <div class="box-product-hover">
+                        <a class="hover:text-red-500" href="truyen5.html"> NHÂN VẬT PHẢN DIỆN</a><br>
+                        <a class="hover:text-red-500" href="truyen5.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Truyện 6 -->
+            <div class="box-product">
+                <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen6.html">
+                    <img class="w-100" src="img/truyen6.jpg"
+                        alt="truyen 6.png"></a>
+                    <div class="box-product-hover">
+                        <a class="hover:text-red-500" href="truyen6.html">TA CÓ 90 TỶ LIẾM CẨU</a><br>
+                        <a class="hover:text-red-500" href="truyen6.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Truyện 2 -->
+            <div class="box-product">
+                <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen2.html">
+                    <img class="w-100" src="img/truyen2.jpg"
+                        alt="truyen 2.png"></a>
+                    <div class="box-product-hover">
+                        <a class="hover:text-red-500" href="truyen2.html">TINH GIÁP HỒN TƯỚNG</a>
+                        <br>
+                        <a class="hover:text-red-500" href="truyen2.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Truyện 3 -->
+            <div class="box-product">
+                <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen3.html">
+                    <img class="w-100" src="img/truyen3.jpg"
+                        alt="truyen 3.png"></a>
+                    <div class="box-product-hover">
+                        <a class="hover:text-red-500" href="truyen3.html">TỬ ĐẤU</a><br>
+                        <a class="hover:text-red-500" href="truyen3.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Truyện 4 -->
+            <div class="box-product">
+                <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen4.html">
+                    <img class="w-100" src="img/truyen4.jpg"
+                        alt="truyen 4.png"></a>
+                    <div class="box-product-hover">                      
+                        <a class="hover:text-red-500" href="truyen4.html">VÔ ĐỊCH ĐỐN NGỘ</a><br>
+                        <a class="hover:text-red-500" href="truyen4.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Truyện 5 -->
+            <div class="box-product">
+                <div class="img-product">
+                    <a class="hover:text-red-500" href="truyen5.html">
+                    <img class="w-100" src="img/truyen5.jpg"
+                        alt="truyen 5.png"></a>
+                    <div class="box-product-hover">
+                        <a class="hover:text-red-500" href="truyen5.html"> NHÂN VẬT PHẢN DIỆN</a><br>
+                        <a class="hover:text-red-500" href="truyen5.html">Chapter 10</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Nút điều hướng nằm ngoài các phần tử bên trên -->
+        <button id="prevBtn">
+            <i class="fa-solid fa-chevron-left"></i>
+            </button>
+        <button id="nextBtn">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+<!-- Danh sách truyện -->
+<section class="truyen-list">
+    <h2 class="title" style="color: blue;">Danh sách truyện ></h2>
+    <br>
+    <div class="truyen-grid">
+        <!-- Truyện 1 -->
+        <div class="grid-product">
+            <a href="truyen1.html">
+                <img src="img/truyen1.jpg" alt="truyen 1.png">
+            </a>
+            <div class="grid-product-hover">
+                <a href="truyen1.html">HẠ CÁNH ĐẾN NĂM SAU</a>
+                <div class="chapter-item">
+                    <a href="chapter10.html">Chapter 10</a>
+                    <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                </div>
+                <div class="chapter-item">
+                    <a href="chapter9.html" class="title-link">Chapter 9</a>
+                    <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                </div>
+                <div class="chapter-item">
+                    <a href="chapter8.html">Chapter 8</a>
+                    <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                </div>
+            </div>
+        </div>
+        <!-- Truyện 2 -->
+        <div class="grid-product">
+            <a href="truyen2.html">
+                <img class="w-100" src="img/truyen2.jpg" alt="truyen 2.png">
+            </a>
+            <div class="grid-product-hover">
+                <a href="truyen2.html">TINH GIÁP HỒN TƯỚNG</a>
+                <div class="chapter-item">
+                    <a href="chapter10.html">Chapter 10</a>
+                    <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                </div>
+                <div class="chapter-item">
+                    <a href="chapter9.html">Chapter 9</a>
+                    <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                </div>
+                <div class="chapter-item">
+                    <a href="chapter8.html">Chapter 8</a>
+                    <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                </div>
+            </div>
+        </div>
+        <!-- Truyện 3 -->
+        <div class="grid-product">
+            <a href="truyen3.html">
+                <img class="w-100" src="img/truyen3.jpg" alt="truyen 3.png">
+            </a>
+            <div class="grid-product-hover">
+                <a href="truyen3.html">TỬ ĐẤU</a>
+                <div class="chapter-item">
+                    <a href="chapter10.html">Chapter 10</a>
+                    <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                </div>
+                <div class="chapter-item">
+                    <a href="chapter9.html">Chapter 9</a>
+                    <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                </div>
+                <div class="chapter-item">
+                    <a href="chapter8.html">Chapter 8</a>
+                    <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                </div>
+            </div>
+        </div>
+        <!-- Truyện 4 -->
+        <div class="grid-product">
+                <a href="truyen4.html">
+                <img class="w-100" src="img/truyen4.jpg"
+                    alt="truyen 4.png"></a>
+                    <div class="grid-product-hover">
+                        <a href="truyen4.html">VÔ ĐỊCH ĐỐN NGỘ</a>
+                        <div class="chapter-item">
+                            <a href="chapter10.html">Chapter 10</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter9.html">Chapter 9</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter8.html">Chapter 8</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                        </div>
+                    </div>
+            </div>
+        <!-- Truyện 5 -->
+        <div class="grid-product">
+                <a href="truyen5.html">
+                <img class="w-100" src="img/truyen5.jpg"
+                    alt="truyen 5.png"></a>
+                    <div class="grid-product-hover">
+                        <a href="truyen5.html"> NHÂN VẬT PHẢN DIỆN</a>
+                        <div class="chapter-item">
+                            <a href="chapter10.html">Chapter 10</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter9.html">Chapter 9</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter8.html">Chapter 8</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                        </div>
+                    </div>
+            </div>
+        <!-- Truyện 6 -->
+        <div class="grid-product">
+                <a href="truyen6.html">
+                <img class="w-100" src="img/truyen6.jpg"
+                    alt="truyen 2.png"></a>
+                    <div class="grid-product-hover">
+                        <a href="truyen6.html">TA CÓ 90 TỶ LIẾM CẨU</a>
+                        <div class="chapter-item">
+                            <a href="chapter10.html">Chapter 10</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter9.html">Chapter 9</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter8.html">Chapter 8</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                        </div>
+                    </div>
+            </div>
+        <!-- Truyện 2 -->
+        <div class="grid-product">
+                <a href="truyen2.html">
+                <img class="w-100" src="img/truyen2.jpg"
+                    alt="truyen 2.png"></a>
+                    <div class="grid-product-hover">
+                        <a href="truyen2.html">TINH GIÁP HỒN TƯỚNG</a>
+                        <div class="chapter-item">
+                            <a href="chapter10.html">Chapter 10</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter9.html">Chapter 9</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter8.html">Chapter 8</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                        </div>
+                    </div>
+            </div>
+        <!-- Truyện 3 -->
+        <div class="grid-product">
+                <a href="truyen3.html">
+                <img class="w-100" src="img/truyen3.jpg"
+                    alt="truyen 3.png"></a>
+                    <div class="grid-product-hover">
+                        <a href="truyen3.html">TỬ ĐẤU</a>
+                        <div class="chapter-item">
+                            <a href="chapter10.html">Chapter 10</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter9.html">Chapter 9</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter8.html">Chapter 8</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                        </div>
+                    </div>
+            </div>
+        <!-- Truyện 4 -->
+        <div class="grid-product">
+                <a href="truyen4.html">
+                <img class="w-100" src="img/truyen4.jpg"
+                    alt="truyen 4.png"></a>
+                    <div class="grid-product-hover">
+                        <a href="truyen4.html">VÔ ĐỊCH ĐỐN NGỘ</a>
+                        <div class="chapter-item">
+                            <a href="chapter10.html">Chapter 10</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter9.html">Chapter 9</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter8.html">Chapter 8</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                        </div>
+                    </div>
+            </div>
+        <!-- Truyện 5 -->
+        <div class="grid-product">
+                <a href="truyen5.html">
+                <img class="w-100" src="img/truyen5.jpg"
+                    alt="truyen 5.png"></a>
+                    <div class="grid-product-hover">
+                        <a href="truyen5.html"> NHÂN VẬT PHẢN DIỆN</a>
+                        <div class="chapter-item">
+                            <a href="chapter10.html">Chapter 10</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">9 giờ trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter9.html">Chapter 9</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">1 ngày trước</p>
+                        </div>
+                        <div class="chapter-item">
+                            <a href="chapter8.html">Chapter 8</a>
+                            <p class="time-posted" data-time="2024-11-29T10:00:00">3 ngày trước</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TruyenDoc. Liên hệ quảng cáo qua Telegram: @thktv</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

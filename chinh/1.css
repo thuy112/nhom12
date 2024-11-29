@@ -1,0 +1,378 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #121010;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6dcff9;
+    color: #050404;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+.truyen-list {
+    padding: 20px;
+    position: relative; /* Vẫn cho phép định vị con nhưng không cố định nút */
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+footer {
+    background: #6dcff9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+
+.hero-banner {
+    position: relative; /* Vẫn cho phép định vị con nhưng không cố định nút */
+    overflow: hidden;
+}
+
+#slider {
+    display: flex;
+    overflow-x: scroll; /* Hiển thị thanh cuộn ngang */
+    scroll-behavior: smooth; /* Hiệu ứng cuộn mượt */
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap; /* Không ngắt dòng */
+}
+
+
+/* Định kiểu cho nút điều hướng */
+#prevBtn, #nextBtn {
+    position: fixed; /* Cố định vị trí trên màn hình */
+    top: 50%; /* Vị trí giữa chiều cao màn hình */
+    transform: translateY(-50%); /* Căn chỉnh giữa trục Y */
+    background-color: rgba(0, 0, 0, 0.7); /* Nền tối, có độ trong suốt */
+    color: white; /* Màu chữ trắng */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 999; /* Đặt z-index cao để nằm trên các phần tử khác */
+}
+
+/* Nút mũi tên trái */
+#prevBtn {
+    left: 10px; /* Căn lề trái */
+}
+
+/* Nút mũi tên phải */
+#nextBtn {
+    right: 10px; /* Căn lề phải */
+}
+
+/* Hiệu ứng hover */
+#prevBtn:hover, #nextBtn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Nền sáng hơn khi hover */
+    color: black; /* Đổi màu chữ thành đen */
+}
+
+
+/* Ẩn nút Prev mặc định 
+#prevBtn {
+    display: none;
+}*/
+
+#slider > .box-product {
+    flex-shrink: 0; /* Không cho phép box thu nhỏ */
+}
+
+/* Truyện */
+.box-product {
+    flex: 0 0 20%; /* Hiển thị 5 truyện mỗi lần */
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.img-product img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.img-product img:hover {
+    transform: none;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-80{
+    width: 78%;
+}
+
+.w-25{
+    width: 23%;
+}
+
+#hot-product{
+    margin-top: 2rem;
+}
+
+.box-product {
+    margin: 10px; /* Thêm khoảng cách giữa các hộp */
+}
+
+@media (max-width: 768px) {
+    .truyen-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .truyen-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Tiêu đề "Danh sách truyện" */
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    position: absolute; /* Định vị tiêu đề */
+    top: 0; /* Đặt tiêu đề ở phần trên cùng */
+    left: 0; /* Đặt tiêu đề ở phía trái */
+    margin: 20px; /* Khoảng cách từ các cạnh của màn hình */
+}
+/* Đường kẻ ngang dưới tiêu đề */
+hr {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+/* Dàn lưới truyện */
+/* Phần chứa toàn bộ danh sách */
+.truyen-list {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Phần hàng ngang chứa các truyện */
+.truyen-row {
+    display: flex;
+    justify-content: space-between; /* Khoảng cách giữa các truyện */
+    gap: 10px; /* Khoảng cách cố định giữa các truyện */
+    overflow-x: auto; /* Bật cuộn ngang nếu không đủ không gian */
+}
+
+/* Từng truyện */
+.truyen-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 cột cho mỗi hàng */
+    gap: 15px; /* Khoảng cách giữa các box */
+    margin-top: 20px;
+}
+
+/* Box từng truyện */
+.grid-product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-product:hover {
+    transform: none; /* Hiệu ứng phóng to */
+    box-shadow: none;
+}
+
+/* Ảnh truyện */
+.grid-product img {
+    width: 100%;
+    height: 200px;
+    height: auto; /* Giữ tỷ lệ ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    margin: 0 auto; /* Căn giữa ảnh */
+}
+
+/* Thông tin truyện */
+.grid-product .grid-product-hover {
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-product .grid-product-hover a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.grid-product .grid-product-hover p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Hiệu ứng hover cho link */
+.grid-product-hover a:hover {
+    color: red; /* Thay đổi màu chữ thành đỏ khi di chuột */
+    text-decoration: none; /* Bỏ gạch chân dưới link nếu có */
+    transition: color 0.2s ease-in-out; /* Thêm hiệu ứng chuyển đổi mượt */
+}
+
+
+/* thể loại
+/* Dropdown container */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button (Thể loại) */
+.dropbtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Mũi tên xuống */
+.dropbtn i {
+    margin-left: 5px;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown menu on hover */
+.menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Description box */
+#genre-description {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f8ff;
+    font-size: 14px;
+}
+.menu:hover .dropdown-content,
+.menu:hover #genre-description {
+    display: block;
+}
+/* Ẩn mô tả mặc định */
+.dropdown-content .description {
+    display: none;
+    font-size: 12px;
+    color: blue;
+    font-style: italic;
+    padding: 5px 12px;
+    border-top: 1px solid #ddd;
+}
+
+/* Hiển thị mô tả khi hover */
+.dropdown-content a:hover + .description {
+    display: block;
+}
+
+#slider {
+    display: flex;
+    overflow-x: scroll; /* Hiển thị thanh cuộn ngang */
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 10px;
+}
+
+#slider::-webkit-scrollbar {
+    height: 8px; /* Độ dày thanh cuộn */
+}
+
+#slider::-webkit-scrollbar-thumb {
+    background: #ccc; /* Màu của thanh cuộn */
+    border-radius: 4px;
+}
+
+.chapter-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; /* Khoảng cách giữa các dòng */
+}
+
+.chapter-item a {
+    font-size: 14px; /* Kích thước font cho chapter */
+    color: #000; /* Màu sắc cho link */
+    text-decoration: none;
+}
+
+.time-posted {
+    font-size: 10px; /* Kích thước font cho thời gian */
+    color: #777; /* Màu sắc cho thời gian */
+}
+
+

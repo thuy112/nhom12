@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên Mật Khẩu</title>
+    <link rel="stylesheet" href="đn.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="1.html">TruyenDoc</a>
+            </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500" aria-current="page"
+                        href="1.html">
+                        <span class="icon-footer-address">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="theodoi.html">Theo dõi</a> 
+                </div> 
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="ls.html">Lịch sử</a> 
+                </div> 
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500 dropbtn" href="#">
+                        Thể loại <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#" data-description="Các câu chuyện đầy hành động, kịch tính.">Action</a>
+                        <a href="#" data-description="Phiêu lưu, khám phá những vùng đất mới.">Adventure</a>
+                        <a href="#" data-description="Truyện mang phong cách Anime.">Anime</a>
+                        <a href="#" data-description="Truyện tình cảm ngọt ngào, lãng mạn.">Ngôn Tình</a>
+                        <a href="#" data-description="Thể loại về huyền bí và siêu nhiên.">Manhua</a>
+                    </div>
+                </div>
+                <!-- Khu vực hiển thị mô tả -->
+                <div id="genre-description" style="margin-top: 10px; color: rgb(3, 3, 3); font-style: italic; display: none;">
+                </div>                                              
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="đn.html">Đăng nhập</a> 
+                </div>   
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Trang chủ</a> » <span>Quên mật khẩu</span>
+        </div>
+        <div class="login-form">
+            <h2>QUÊN MẬT KHẨU</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="email">Nhập email</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+                </div>
+                <button type="submit" class="login-btn">Gửi yêu cầu</button>
+                <p class="switch-link"><a href="đn.html">Trở về đăng nhập</a></p>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TruyenDoc. Liên hệ quảng cáo qua Telegram: @thktv</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

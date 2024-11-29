@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HẠ CÁNH ĐẾN NĂM SAU</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="truyen.css">
+    <link rel="stylesheet" href="ls.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="1.html">TruyenDoc</a>
+            </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500" aria-current="page"
+                        href="1.html">
+                        <span class="icon-footer-address">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="theodoi.html">Theo dõi</a> 
+                </div> 
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="ls.html">Lịch sử</a> 
+                </div> 
+                <div class="menu">
+                    <a class="nav-link active hover:text-red-500 dropbtn" href="#">
+                        Thể loại <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#" data-description="Các câu chuyện đầy hành động, kịch tính.">Action</a>
+                        <a href="#" data-description="Phiêu lưu, khám phá những vùng đất mới.">Adventure</a>
+                        <a href="#" data-description="Truyện mang phong cách Anime.">Anime</a>
+                        <a href="#" data-description="Truyện tình cảm ngọt ngào, lãng mạn.">Ngôn Tình</a>
+                        <a href="#" data-description="Thể loại về huyền bí và siêu nhiên.">Manhua</a>
+                    </div>
+                </div>
+                <!-- Khu vực hiển thị mô tả -->
+                <div id="genre-description" style="margin-top: 10px; color: rgb(3, 3, 3); font-style: italic; display: none;">
+                </div>                                              
+                <div class="menu"> 
+                    <a class="nav-link active hover:text-red-500" href="đn.html">Đăng nhập</a> 
+                </div>   
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="breadcrumb">
+            <a href="1.html">Trang chủ</a> » <a href="truyen5.html" class="breadcrumb-link">NHÂN VẬT PHẢN DIỆN</a>
+        </div>
+        <div class="comic-details">
+            <img src="img/truyen5.jpg" alt="NHÂN VẬT PHẢN DIỆN">
+            <div class="details">
+                <h1>NHÂN VẬT PHẢN DIỆN</h1>
+                <p><strong>Thể loại:</strong> 
+                    <a href="action.html" class="genre-link">Action</a> - 
+                    <a href="manhua.html" class="genre-link">Manhua</a>
+                </p>                
+                <p><strong>Tác giả:</strong> Đang cập nhật</p>
+                <p><strong>Tình trạng:</strong> Đang tiến hành</p>
+                <p><strong>Lượt xem:</strong> 2.394.478</p>
+                <p><strong>Đánh giá:</strong> ⭐⭐⭐⭐☆ (4.5/5 - 287726 lượt đánh giá)</p>
+                <a href="đn.html" class="btn-follow">Theo dõi</a>
+                <a href="chapter1.html" class="btn-read">Đọc từ đầu</a>
+                <a href="chapter10.html" class="btn-read-latest">Đọc mới nhất</a>
+            </div>
+        </div>
+    </main>
+<!-- Phần giới thiệu manga -->
+<div class="manga-intro">
+    <h2>Giới thiệu truyện</h2>
+    <p>
+        Cốt truyện: Manga hiện nay đang bội thực bởi các tác phẩm isekai rập khuôn hay manga yêu ma quỷ quái dễ đoán thì bạn sẽ là người vô cùng may mắn khi đọc Dandadan bạn sẽ khó mà đoán được diễn biến tiếp theo là gì! Nhờ kết hợp hài hòa yếu tố viễn tưởng với tâm linh ma quỷ và sự hài hước độc đáo, Dandadan có cách kể truyện khéo léo. Một số đoạn bạn vẫn sẽ đoán được nhân vật làm gì đấy nhưng về tổng thể thì cực kỳ khó biết được câu chuyện sẽ đi về đâu. Hiện tại, sau hơn 15 chap phát hành, Dandadan đang dần mở rộng câu chuyện của mình hơn và hứa hẹn tương lai đầy tươi sáng cho bộ manga này.
+    </p>
+</div>
+    <!-- Bảng danh sách chương -->
+<div class="chapter-list">
+    <h2>Danh sách chương</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Số chương</th>
+                <th>Cập nhật</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="chapter10.html">Chapter 10</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <tr>
+                <td><a href="chapter9.html">Chapter 9</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <tr>
+                <td><a href="chapter8.html">Chapter 8</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <tr>
+                <td><a href="chapter7.html">Chapter 7</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <tr>
+                <td><a href="chapter6.html">Chapter 6</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <tr>
+                <td><a href="chapter5.html">Chapter 5</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <tr>
+                <td><a href="chapter4.html">Chapter 4</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <tr>
+                <td><a href="chapter3.html">Chapter 3</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <tr>
+                <td><a href="chapter2.html">Chapter 2</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <tr>
+                <td><a href="chapter1.html">Chapter 1</a></td>
+                <td class="time-posted" data-time="2024-11-28T04:00:00">Đang tải...</td>
+            </tr>
+            <!-- Thêm nhiều chương tùy ý -->
+        </tbody>
+    </table>
+</div>
+    <footer>
+        <p>&copy; 2024 TruyenDoc. Liên hệ quảng cáo qua Telegram: @thktv</p>
+    </footer>
+</body>
+</html>

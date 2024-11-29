@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #121010;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6dcff9;
+    color: #050404;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+.truyen-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+} 
+#device-history {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+#device-history li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#device-history li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+footer {
+    background: #6dcff9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+/* thể loại
+/* Dropdown container */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button (Thể loại) */
+.dropbtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Mũi tên xuống */
+.dropbtn i {
+    margin-left: 5px;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown menu on hover */
+.menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Description box */
+#genre-description {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f8ff;
+    font-size: 14px;
+}
+.menu:hover .dropdown-content,
+.menu:hover #genre-description {
+    display: block;
+}
+/* Ẩn mô tả mặc định */
+.dropdown-content .description {
+    display: none;
+    font-size: 12px;
+    color: blue;
+    font-style: italic;
+    padding: 5px 12px;
+    border-top: 1px solid #ddd;
+}
+
+/* Hiển thị mô tả khi hover */
+.dropdown-content a:hover + .description {
+    display: block;
+}
+
